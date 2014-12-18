@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MWFeedParser.h"
-@interface ViewController : UIViewController<MWFeedParserDelegate> {
-    
+@interface ViewController : UIViewController<MWFeedParserDelegate,UITableViewDataSource,UITableViewDelegate> {
+    IBOutlet UITableView *rsstable;
     // Parsing
     MWFeedParser *feedParser;
     NSMutableArray *parsedItems;

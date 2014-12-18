@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MWFeedParser.h"
+#import "NSString+HTML.h"
 @interface ViewController ()
 
 @end
@@ -28,7 +29,14 @@
     feedParser.connectionType = ConnectionTypeAsynchronously;
     [feedParser parse];
 }
-
+- (void)updateTableWithParsedItems {
+    itemsToDisplay = [parsedItems sortedArrayUsingDescriptors:
+                           [NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"date"
+                                                                                ascending:NO]]];
+    rsstable.userInteractionEnabled = YES;
+    rsstable.alpha = 1;
+    [rsstable reloadData];
+}
 #pragma mark -
 #pragma mark MWFeedParserDelegate
 
@@ -48,7 +56,7 @@
 
 - (void)feedParserDidFinish:(MWFeedParser *)parser {
     NSLog(@"Finished Parsing%@", (parser.stopped ? @" (Stopped)" : @""));
-    //[self updateTableWithParsedItems];
+    [self updateTableWithParsedItems];
     NSLog(@"FINISH %@",[parsedItems objectAtIndex:0]);
 }
 
@@ -65,7 +73,56 @@
                                               otherButtonTitles:nil];
         [alert show];
     }
-    //[self updateTableWithParsedItems];
+    [self updateTableWithParsedItems];
+}
+
+#pragma mark -
+#pragma mark Table view data source
+
+// Customize the number of sections in the table view.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+// Customize the number of rows in the table view.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return itemsToDisplay.count;
+}
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+    MWFeedItem *item = [itemsToDisplay objectAtIndex:indexPath.row];
+    if (item) {
+        
+        // Process
+        NSString *itemTitle = item.title ? [item.title stringByConvertingHTMLToPlainText] : @"[No Title]";
+        NSString *itemSummary = item.summary ? [item.summary stringByConvertingHTMLToPlainText] : @"[No Summary]";
+        
+        // Set
+        cell.textLabel.font = [UIFont boldSystemFontOfSize:15];
+        cell.textLabel.text = itemTitle;
+        NSMutableString *subtitle = [NSMutableString string];
+        if (item.date) [subtitle appendFormat:@"%@: ", [formatter stringFromDate:item.date]];
+        [subtitle appendString:itemSummary];
+        cell.detailTextLabel.text = subtitle;
+        
+    }
+    return cell;
+}
+
+#pragma mark -
+#pragma mark Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
 
 
