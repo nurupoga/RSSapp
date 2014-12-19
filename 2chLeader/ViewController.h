@@ -10,6 +10,7 @@
 #import "MWFeedParser.h"
 @interface ViewController : UIViewController<MWFeedParserDelegate,UITableViewDataSource,UITableViewDelegate> {
     IBOutlet UITableView *rsstable;
+    IBOutlet UIButton *button;
     // Parsing
     MWFeedParser *feedParser;
     NSMutableArray *parsedItems;

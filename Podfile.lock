@@ -8,11 +8,14 @@ PODS:
     - MWFeedParser/NSString+HTML
   - MWFeedParser/NSDate+InternetDateTime (1.0.1)
   - MWFeedParser/NSString+HTML (1.0.1)
+  - QBFlatButton (1.1)
 
 DEPENDENCIES:
   - MWFeedParser
+  - QBFlatButton
 
 SPEC CHECKSUMS:
   MWFeedParser: 003cbf5398e99a7f2057fbe9583054fd1b84be72
+  QBFlatButton: 5fcc26fe56e34cbae7c9de53aec38463f980c76e
 
 COCOAPODS: 0.35.0
