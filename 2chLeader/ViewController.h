@@ -20,7 +20,7 @@
     NSDateFormatter *formatter;
     
 }
-
+-(IBAction)reloadButton;
 
 
 @end

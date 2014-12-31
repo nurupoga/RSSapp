@@ -15,6 +15,8 @@
 		C70ADF641A433D1400E182AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70ADF631A433D1400E182AE /* Images.xcassets */; };
 		C70ADF671A433D1400E182AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70ADF651A433D1400E182AE /* LaunchScreen.xib */; };
 		C70ADF731A433D1400E182AE /* _chLeaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C70ADF721A433D1400E182AE /* _chLeaderTests.m */; };
+		C752AC321A529DF00099BF8E /* webViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C752AC311A529DF00099BF8E /* webViewController.m */; };
+		C7A0EB251A4492CD00C36DFC /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A0EB241A4492CD00C36DFC /* SettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		C70ADF6C1A433D1400E182AE /* 2chLeaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2chLeaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70ADF711A433D1400E182AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C70ADF721A433D1400E182AE /* _chLeaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _chLeaderTests.m; sourceTree = "<group>"; };
+		C752AC301A529DF00099BF8E /* webViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webViewController.h; sourceTree = "<group>"; };
+		C752AC311A529DF00099BF8E /* webViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webViewController.m; sourceTree = "<group>"; };
+		C7A0EB231A4492CD00C36DFC /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		C7A0EB241A4492CD00C36DFC /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		D03AE9022B4022524D424A42 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +99,10 @@
 				C70ADF5D1A433D1400E182AE /* ViewController.h */,
 				C70ADF5E1A433D1400E182AE /* ViewController.m */,
 				C70ADF601A433D1400E182AE /* Main.storyboard */,
+				C752AC301A529DF00099BF8E /* webViewController.h */,
+				C752AC311A529DF00099BF8E /* webViewController.m */,
+				C7A0EB231A4492CD00C36DFC /* SettingViewController.h */,
+				C7A0EB241A4492CD00C36DFC /* SettingViewController.m */,
 				C70ADF631A433D1400E182AE /* Images.xcassets */,
 				C70ADF651A433D1400E182AE /* LaunchScreen.xib */,
 				C70ADF561A433D1400E182AE /* Supporting Files */,
@@ -281,7 +291,9 @@
 			files = (
 				C70ADF5F1A433D1400E182AE /* ViewController.m in Sources */,
 				C70ADF5C1A433D1400E182AE /* AppDelegate.m in Sources */,
+				C752AC321A529DF00099BF8E /* webViewController.m in Sources */,
 				C70ADF591A433D1400E182AE /* main.m in Sources */,
+				C7A0EB251A4492CD00C36DFC /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

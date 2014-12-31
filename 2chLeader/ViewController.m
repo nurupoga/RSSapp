@@ -9,12 +9,32 @@
 #import "ViewController.h"
 #import "MWFeedParser.h"
 #import "NSString+HTML.h"
+#import "webViewController.h"
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+-(IBAction)reloadButton{
+    formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateStyle:NSDateFormatterShortStyle];
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    parsedItems = [[NSMutableArray alloc] init];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSData *data = [defaults objectForKey:@"thelink"];
+    NSArray *arr = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    
+    for (int i = 0; i < [arr count]; i++) {
+        NSURL *feedURL = [NSURL URLWithString:[arr objectAtIndexedSubscript:i]];
+        feedParser = [[MWFeedParser alloc] initWithFeedURL:feedURL];
+        feedParser.delegate = self;
+        feedParser.feedParseType = ParseTypeFull; // Parse feed info and all items
+        feedParser.connectionType = ConnectionTypeAsynchronously;
+        [feedParser parse];
+    }
+    [rsstable reloadData];
 
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     formatter = [[NSDateFormatter alloc] init];
@@ -22,12 +42,20 @@
     [formatter setTimeStyle:NSDateFormatterShortStyle];
     parsedItems = [[NSMutableArray alloc] init];
     
-    NSURL *feedURL = [NSURL URLWithString:@"http://jin115.com/index.rdf"];
-    feedParser = [[MWFeedParser alloc] initWithFeedURL:feedURL];
-    feedParser.delegate = self;
-    feedParser.feedParseType = ParseTypeFull; // Parse feed info and all items
-    feedParser.connectionType = ConnectionTypeAsynchronously;
-    [feedParser parse];
+    NSLog(@"viewdidload");
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSData *data = [defaults objectForKey:@"thelink"];
+    NSArray *arr = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    
+    for (int i = 0; i < [arr count]; i++) {
+        NSURL *feedURL = [NSURL URLWithString:[arr objectAtIndexedSubscript:i]];
+        feedParser = [[MWFeedParser alloc] initWithFeedURL:feedURL];
+        feedParser.delegate = self;
+        feedParser.feedParseType = ParseTypeFull; // Parse feed info and all items
+        feedParser.connectionType = ConnectionTypeAsynchronously;
+        [feedParser parse];
+    }
+    [rsstable reloadData];
 }
 - (void)updateTableWithParsedItems {
     itemsToDisplay = [parsedItems sortedArrayUsingDescriptors:
@@ -41,16 +69,16 @@
 #pragma mark MWFeedParserDelegate
 
 - (void)feedParserDidStart:(MWFeedParser *)parser {
-    NSLog(@"Started Parsing: %@", parser.url);
+    //NSLog(@"Started Parsing: %@", parser.url);
 }
 
 - (void)feedParser:(MWFeedParser *)parser didParseFeedInfo:(MWFeedInfo *)info {
-    NSLog(@"Parsed Feed Info: “%@”", info.title);
+    //NSLog(@"Parsed Feed Info: “%@”", info.title);
     self.title = info.title;
 }
 
 - (void)feedParser:(MWFeedParser *)parser didParseFeedItem:(MWFeedItem *)item {
-    NSLog(@"Parsed Feed Item: “%@”", item.title);
+    //NSLog(@"Parsed Feed Item: “%@”", item.title);
     if (item) [parsedItems addObject:item];
 }
 
@@ -122,7 +150,12 @@
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    NSLog(@"title:%@",[itemsToDisplay objectAtIndex:indexPath.row]);
+    webViewController  *sub = [self.storyboard instantiateViewControllerWithIdentifier:@"web"];
+    //NavigationControllerを使って遷移する
+    MWFeedItem *item = [itemsToDisplay objectAtIndex:indexPath.row];
+    sub.socialUrl = item.link;
+    [self.navigationController pushViewController:sub animated:YES];
 }
 
 
