@@ -1,0 +1,30 @@
+
+/* Class = "IBUINavigationItem"; title = "ソシャゲ"; ObjectID = "0WY-IW-G3e"; */
+"0WY-IW-G3e.title" = "ソシャゲ";
+
+/* Class = "IBUIButton"; normalTitle = "R"; ObjectID = "4Rd-3L-wAS"; */
+"4Rd-3L-wAS.normalTitle" = "R";
+
+/* Class = "IBUILabel"; text = "乖離性MA"; ObjectID = "6Gv-fA-3wu"; */
+"6Gv-fA-3wu.text" = "乖離性MA";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "EMK-KY-KwB"; */
+"EMK-KY-KwB.normalTitle" = "Back";
+
+/* Class = "IBUILabel"; text = "パズドラ"; ObjectID = "K0e-IP-us3"; */
+"K0e-IP-us3.text" = "パズドラ";
+
+/* Class = "IBUILabel"; text = "モンスト"; ObjectID = "KpX-eO-E7d"; */
+"KpX-eO-E7d.text" = "モンスト";
+
+/* Class = "IBUILabel"; text = "ラブライブ"; ObjectID = "X3m-7L-vMR"; */
+"X3m-7L-vMR.text" = "ラブライブ";
+
+/* Class = "IBUILabel"; text = "FFRK"; ObjectID = "XsN-ip-AqS"; */
+"XsN-ip-AqS.text" = "FFRK";
+
+/* Class = "IBUILabel"; text = "黒ウィズ"; ObjectID = "iSz-nL-aq4"; */
+"iSz-nL-aq4.text" = "黒ウィズ";
+
+/* Class = "IBUIButton"; normalTitle = "⚙"; ObjectID = "ti9-6p-oEh"; */
+"ti9-6p-oEh.normalTitle" = "⚙";

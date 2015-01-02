@@ -16,6 +16,9 @@
 		C70ADF671A433D1400E182AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70ADF651A433D1400E182AE /* LaunchScreen.xib */; };
 		C70ADF731A433D1400E182AE /* _chLeaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C70ADF721A433D1400E182AE /* _chLeaderTests.m */; };
 		C752AC321A529DF00099BF8E /* webViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C752AC311A529DF00099BF8E /* webViewController.m */; };
+		C78364621A566CD600E57382 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78364611A566CD600E57382 /* CFNetwork.framework */; };
+		C78364641A566CDE00E57382 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78364631A566CDE00E57382 /* SystemConfiguration.framework */; };
+		C78364661A566CE900E57382 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78364651A566CE900E57382 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C7A0EB251A4492CD00C36DFC /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A0EB241A4492CD00C36DFC /* SettingViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +35,7 @@
 /* Begin PBXFileReference section */
 		15B32DFB39DFD204AA977B0C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		962928B9A33FC0F0A876A0B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C70ADF531A433D1400E182AE /* 2chLeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2chLeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70ADF531A433D1400E182AE /* socialmatome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialmatome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70ADF571A433D1400E182AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C70ADF581A433D1400E182AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C70ADF5A1A433D1400E182AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,11 +45,16 @@
 		C70ADF611A433D1400E182AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C70ADF631A433D1400E182AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C70ADF661A433D1400E182AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C70ADF6C1A433D1400E182AE /* 2chLeaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2chLeaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70ADF6C1A433D1400E182AE /* socialmatomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = socialmatomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70ADF711A433D1400E182AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C70ADF721A433D1400E182AE /* _chLeaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _chLeaderTests.m; sourceTree = "<group>"; };
 		C752AC301A529DF00099BF8E /* webViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webViewController.h; sourceTree = "<group>"; };
 		C752AC311A529DF00099BF8E /* webViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webViewController.m; sourceTree = "<group>"; };
+		C78364611A566CD600E57382 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C78364631A566CDE00E57382 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C78364651A566CE900E57382 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C78364671A566EA500E57382 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		C78364681A566EA500E57382 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		C7A0EB231A4492CD00C36DFC /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		C7A0EB241A4492CD00C36DFC /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		D03AE9022B4022524D424A42 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C78364661A566CE900E57382 /* StoreKit.framework in Frameworks */,
+				C78364641A566CDE00E57382 /* SystemConfiguration.framework in Frameworks */,
+				C78364621A566CD600E57382 /* CFNetwork.framework in Frameworks */,
 				385597BD8606CE4C1F9118AC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,8 +96,8 @@
 		C70ADF541A433D1400E182AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C70ADF531A433D1400E182AE /* 2chLeader.app */,
-				C70ADF6C1A433D1400E182AE /* 2chLeaderTests.xctest */,
+				C70ADF531A433D1400E182AE /* socialmatome.app */,
+				C70ADF6C1A433D1400E182AE /* socialmatomeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +150,9 @@
 		DA47860E2E4EEF0895738B09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C78364651A566CE900E57382 /* StoreKit.framework */,
+				C78364631A566CDE00E57382 /* SystemConfiguration.framework */,
+				C78364611A566CD600E57382 /* CFNetwork.framework */,
 				962928B9A33FC0F0A876A0B1 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -156,9 +170,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C70ADF521A433D1400E182AE /* 2chLeader */ = {
+		C70ADF521A433D1400E182AE /* socialmatome */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C70ADF761A433D1400E182AE /* Build configuration list for PBXNativeTarget "2chLeader" */;
+			buildConfigurationList = C70ADF761A433D1400E182AE /* Build configuration list for PBXNativeTarget "socialmatome" */;
 			buildPhases = (
 				E070E57BC12C2F3F873F04CE /* Check Pods Manifest.lock */,
 				C70ADF4F1A433D1400E182AE /* Sources */,
@@ -170,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = 2chLeader;
+			name = socialmatome;
 			productName = 2chLeader;
-			productReference = C70ADF531A433D1400E182AE /* 2chLeader.app */;
+			productReference = C70ADF531A433D1400E182AE /* socialmatome.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C70ADF6B1A433D1400E182AE /* 2chLeaderTests */ = {
+		C70ADF6B1A433D1400E182AE /* socialmatomeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C70ADF791A433D1400E182AE /* Build configuration list for PBXNativeTarget "2chLeaderTests" */;
+			buildConfigurationList = C70ADF791A433D1400E182AE /* Build configuration list for PBXNativeTarget "socialmatomeTests" */;
 			buildPhases = (
 				C70ADF681A433D1400E182AE /* Sources */,
 				C70ADF691A433D1400E182AE /* Frameworks */,
@@ -188,9 +202,9 @@
 			dependencies = (
 				C70ADF6E1A433D1400E182AE /* PBXTargetDependency */,
 			);
-			name = 2chLeaderTests;
+			name = socialmatomeTests;
 			productName = 2chLeaderTests;
-			productReference = C70ADF6C1A433D1400E182AE /* 2chLeaderTests.xctest */;
+			productReference = C70ADF6C1A433D1400E182AE /* socialmatomeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +226,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C70ADF4E1A433D1400E182AE /* Build configuration list for PBXProject "2chLeader" */;
+			buildConfigurationList = C70ADF4E1A433D1400E182AE /* Build configuration list for PBXProject "socialmatome" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -225,8 +239,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C70ADF521A433D1400E182AE /* 2chLeader */,
-				C70ADF6B1A433D1400E182AE /* 2chLeaderTests */,
+				C70ADF521A433D1400E182AE /* socialmatome */,
+				C70ADF6B1A433D1400E182AE /* socialmatomeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -310,7 +324,7 @@
 /* Begin PBXTargetDependency section */
 		C70ADF6E1A433D1400E182AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C70ADF521A433D1400E182AE /* 2chLeader */;
+			target = C70ADF521A433D1400E182AE /* socialmatome */;
 			targetProxy = C70ADF6D1A433D1400E182AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -320,6 +334,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C70ADF611A433D1400E182AE /* Base */,
+				C78364671A566EA500E57382 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -328,6 +343,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C70ADF661A433D1400E182AE /* Base */,
+				C78364681A566EA500E57382 /* ja */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -417,9 +433,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = 2chLeader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = socialmatome;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -429,9 +447,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = 2chLeader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = socialmatome;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -449,7 +469,7 @@
 				);
 				INFOPLIST_FILE = 2chLeaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = socialmatomeTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2chLeader.app/2chLeader";
 			};
 			name = Debug;
@@ -464,7 +484,7 @@
 				);
 				INFOPLIST_FILE = 2chLeaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = socialmatomeTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2chLeader.app/2chLeader";
 			};
 			name = Release;
@@ -472,7 +492,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C70ADF4E1A433D1400E182AE /* Build configuration list for PBXProject "2chLeader" */ = {
+		C70ADF4E1A433D1400E182AE /* Build configuration list for PBXProject "socialmatome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C70ADF741A433D1400E182AE /* Debug */,
@@ -481,7 +501,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C70ADF761A433D1400E182AE /* Build configuration list for PBXNativeTarget "2chLeader" */ = {
+		C70ADF761A433D1400E182AE /* Build configuration list for PBXNativeTarget "socialmatome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C70ADF771A433D1400E182AE /* Debug */,
@@ -490,7 +510,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C70ADF791A433D1400E182AE /* Build configuration list for PBXNativeTarget "2chLeaderTests" */ = {
+		C70ADF791A433D1400E182AE /* Build configuration list for PBXNativeTarget "socialmatomeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C70ADF7A1A433D1400E182AE /* Debug */,

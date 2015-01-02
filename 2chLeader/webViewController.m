@@ -20,6 +20,14 @@
     NSURL *url = [NSURL URLWithString:socialUrl];
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
     [webView loadRequest:req];
+    
+    //adad
+    banner = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+    banner.adUnitID = @"ca-app-pub-5835000907268943/3458275514";
+    banner.rootViewController = self;
+    [self.bannerView addSubview:banner];
+    
+    [banner loadRequest:[GADRequest request]];
 }
 
 - (void)didReceiveMemoryWarning {

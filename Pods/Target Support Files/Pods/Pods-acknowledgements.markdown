@@ -1,6 +1,14 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## Appirater
+
+Copyright 2014. Arash Payan. This library is distributed under the terms of the MIT/X11.
+
+## Google-Mobile-Ads-SDK
+
+Copyright 2011 Google Inc. All Rights Reserved.
+
 ## MWFeedParser
 
 Copyright (c) 2010 Michael Waterfall

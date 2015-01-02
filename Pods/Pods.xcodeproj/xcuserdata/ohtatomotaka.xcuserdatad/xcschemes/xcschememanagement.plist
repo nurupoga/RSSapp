@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Appirater.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Appirater.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Google-Mobile-Ads-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MWFeedParser.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>09B3444FAAFF9B0A5F75D00F</key>
+		<key>2BEBB4F36C722CD3FE807D5F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>72052DF54E0BFAE7618713BB</key>
+		<key>5A60547A7CD1F50C0B8D2DB4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EB7EF2BF73C40877D095269D</key>
+		<key>795E7709E93EB718BEAB9A5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9C4E52006B5E821DDC8D90A9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A039355777FF7778CC9EE166</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A77974764124D25B1017DF30</key>
 		<dict>
 			<key>primary</key>
 			<true/>

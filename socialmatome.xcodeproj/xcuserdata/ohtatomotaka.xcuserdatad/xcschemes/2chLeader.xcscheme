@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C70ADF521A433D1400E182AE"
-               BuildableName = "2chLeader.app"
-               BlueprintName = "2chLeader"
-               ReferencedContainer = "container:2chLeader.xcodeproj">
+               BuildableName = "socialmatome.app"
+               BlueprintName = "socialmatome"
+               ReferencedContainer = "container:socialmatome.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C70ADF6B1A433D1400E182AE"
-               BuildableName = "2chLeaderTests.xctest"
-               BlueprintName = "2chLeaderTests"
-               ReferencedContainer = "container:2chLeader.xcodeproj">
+               BuildableName = "socialmatomeTests.xctest"
+               BlueprintName = "socialmatomeTests"
+               ReferencedContainer = "container:socialmatome.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C70ADF6B1A433D1400E182AE"
-               BuildableName = "2chLeaderTests.xctest"
-               BlueprintName = "2chLeaderTests"
-               ReferencedContainer = "container:2chLeader.xcodeproj">
+               BuildableName = "socialmatomeTests.xctest"
+               BlueprintName = "socialmatomeTests"
+               ReferencedContainer = "container:socialmatome.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C70ADF521A433D1400E182AE"
-            BuildableName = "2chLeader.app"
-            BlueprintName = "2chLeader"
-            ReferencedContainer = "container:2chLeader.xcodeproj">
+            BuildableName = "socialmatome.app"
+            BlueprintName = "socialmatome"
+            ReferencedContainer = "container:socialmatome.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C70ADF521A433D1400E182AE"
-            BuildableName = "2chLeader.app"
-            BlueprintName = "2chLeader"
-            ReferencedContainer = "container:2chLeader.xcodeproj">
+            BuildableName = "socialmatome.app"
+            BlueprintName = "socialmatome"
+            ReferencedContainer = "container:socialmatome.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C70ADF521A433D1400E182AE"
-            BuildableName = "2chLeader.app"
-            BlueprintName = "2chLeader"
-            ReferencedContainer = "container:2chLeader.xcodeproj">
+            BuildableName = "socialmatome.app"
+            BlueprintName = "socialmatome"
+            ReferencedContainer = "container:socialmatome.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

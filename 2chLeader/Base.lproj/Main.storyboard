@@ -256,10 +256,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pbu-1m-nq3">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Fj2-dd-crV" firstAttribute="leading" secondItem="tN4-I6-pay" secondAttribute="leadingMargin" constant="-16" id="4iT-Up-cCU"/>
+                            <constraint firstItem="cZI-16-SNx" firstAttribute="top" secondItem="Pbu-1m-nq3" secondAttribute="bottom" id="CZr-Os-KhR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fj2-dd-crV" secondAttribute="trailing" constant="-16" id="GEc-vY-v7S"/>
                             <constraint firstItem="Fj2-dd-crV" firstAttribute="top" secondItem="tN4-I6-pay" secondAttribute="topMargin" id="i76-zn-7f6"/>
                             <constraint firstItem="cZI-16-SNx" firstAttribute="top" secondItem="Fj2-dd-crV" secondAttribute="bottom" id="rpL-hJ-k8i"/>
@@ -267,6 +272,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="bannerView" destination="Pbu-1m-nq3" id="fZt-jE-rYc"/>
                         <outlet property="webView" destination="Fj2-dd-crV" id="5KY-aC-NUG"/>
                     </connections>
                 </viewController>

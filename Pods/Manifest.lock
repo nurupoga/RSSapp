@@ -1,4 +1,6 @@
 PODS:
+  - Appirater (2.0.4)
+  - Google-Mobile-Ads-SDK (6.12.2)
   - MWFeedParser (1.0.1):
     - MWFeedParser/FeedParser (= 1.0.1)
     - MWFeedParser/NSDate+InternetDateTime (= 1.0.1)
@@ -11,10 +13,14 @@ PODS:
   - QBFlatButton (1.1)
 
 DEPENDENCIES:
+  - Appirater
+  - Google-Mobile-Ads-SDK (~> 6.12)
   - MWFeedParser
   - QBFlatButton
 
 SPEC CHECKSUMS:
+  Appirater: cbdb7f305562cfde585300bfff86da01ae559deb
+  Google-Mobile-Ads-SDK: 9761186eb5dc5e1493e71dcce2b525159f763d42
   MWFeedParser: 003cbf5398e99a7f2057fbe9583054fd1b84be72
   QBFlatButton: 5fcc26fe56e34cbae7c9de53aec38463f980c76e
 

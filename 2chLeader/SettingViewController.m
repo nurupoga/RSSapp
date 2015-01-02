@@ -32,7 +32,7 @@
         [linkArray addObject:@"http://www.magicianwiz.net/index.rdf"];
     }
     if(switch4.on){
-        [linkArray addObject:@"http://lovelive-matome.com/index.rdf"];
+        [linkArray addObject:@"http://lovelivepress.com/?xml"];
     }
     if(switch5.on){
         [linkArray addObject:@"http://ffrk0009.blog.jp/index.rdf"];

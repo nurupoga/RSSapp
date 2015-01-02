@@ -10,6 +10,7 @@
 #import "MWFeedParser.h"
 #import "NSString+HTML.h"
 #import "webViewController.h"
+#import "Appirater.h"
 @interface ViewController ()
 
 @end
@@ -37,6 +38,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [Appirater appLaunched:YES];
     formatter = [[NSDateFormatter alloc] init];
     [formatter setDateStyle:NSDateFormatterShortStyle];
     [formatter setTimeStyle:NSDateFormatterShortStyle];

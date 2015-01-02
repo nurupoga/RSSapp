@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GADBannerView.h"
 @interface webViewController : UIViewController{
     IBOutlet UIWebView *webView;
+    GADBannerView *banner;
 }
 @property (nonatomic,copy) NSString *socialUrl;
--(IBAction)fav;
+@property (weak, nonatomic) IBOutlet UIView *bannerView;
+
 @end
